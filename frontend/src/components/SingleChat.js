@@ -129,6 +129,7 @@ function SingleChat({ fetchAgain, setFetchAgain }) {
   useEffect(() => {
     fetchMessages();
     selectedChatCompare = selectedChat;
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [selectedChat]);
 
   //  console.log("notification " , notification);
@@ -139,7 +140,9 @@ function SingleChat({ fetchAgain, setFetchAgain }) {
     socket.on("connected", () => setSocketConnected(true));
     socket.on("typing", () => setIsTyping(true));
     socket.on("stop typing", () => setIsTyping(false));
-  }, []);
+  // eslint-disable-next-line react-hooks/exhaustive-deps
+  },[]);
+  
   useEffect(() => {
     socket.on("message received", (newMessageReceived) => {
       if (
