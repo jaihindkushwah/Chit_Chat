@@ -3,4 +3,7 @@ node_modules
 test.js
 node_modules/
 
-
+/node_modules
+node_modules/
+/frontend/node_modules/
+.env
