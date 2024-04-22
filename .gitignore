@@ -2,5 +2,4 @@ node_modules
 .env
 test.js
 node_modules/
-/frontend/node_modules
-.env
+d
