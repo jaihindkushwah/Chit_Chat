@@ -90,7 +90,7 @@ function SingleChat({ fetchAgain, setFetchAgain }) {
           { content: newMessages, chatId: selectedChat._id },
           config
         );
-        console.log(data);
+        // console.log(data);
         socket.emit("new message", data);
         setMessages([...messages, data]);
       } catch (error) {
