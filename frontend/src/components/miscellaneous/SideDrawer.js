@@ -132,7 +132,7 @@ function SideDrawer() {
           </Button>
         </Tooltip>
 
-        <Text fontSize={"2xl"}>TChit-Chat</Text>
+        <Text fontSize={"2xl"}>Chit-Chat</Text>
         <div>
           <Menu>
             <MenuButton p={2}>
